@@ -1,0 +1,467 @@
+html {
+    position: relative;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+  
+  body {
+    margin: 0;
+    font-family: "Segoe UI";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    background-image: url('https://danielsbroiler.com/cdn/shop/t/2/assets/swirl.svg');
+    opacity: 0.3; /* Adjust this value to change the opacity of the background */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-card {
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    margin: 10px;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.product-card:nth-child(1) {
+    background-image: url('img/Iphone/Iphone.jpg');
+}
+.product-card:nth-child(2) {
+    background-image: url('img/Samsung/Samsung.avif');
+}
+.product-card:nth-child(3) {
+    background-image: url('img/Pixel/Pixel.webp');
+}
+.product-card:nth-child(4) {
+    background-image: url('img/huwei/Huawei-Pura-70-Ultra-image-71-1420x799.webp');
+}
+.product-card:nth-child(5) {
+    background-image: url('img/Xiaomi/pc-14ultra-header.webp');
+}
+.product-card:nth-child(6) {
+    background-image: url('img/OnePlus/li-oneplus-12-hero.avif');
+}
+
+
+.product-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+
+}
+
+.product-card h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.product-card p {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.product-card button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+nav {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Add the missing box-shadow property value */
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin: 0 10px;
+}
+
+
+
+
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+
+
+a {
+    display: block;
+    color: #000000;
+    font-size: 1.2em;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+a.navbttn:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+
+a.navbttn:hover {
+    color: #333;
+}
+
+a.navbttn:hover::before {
+    transform: scaleX(1);
+}
+
+
+.carousel-wrapper {
+    display: flex; /* Aligns children (carousels) horizontally */
+    justify-content: space-between; /* Optional: Adds some space between the carousels */
+    width: 20%;
+    margin: auto;
+}
+
+.carousel {
+    width: 10%;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    flex: 1;
+    padding-top: 45px;
+}
+
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 200%;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    gap: 10px;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.featured-products {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    
+    
+}
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+        border: 1px solid #ddd;
+}
+.about-us {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: solid 1px #000000;
+}
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border: solid 1px #000000;
+}
+.contact-info p {
+    margin: 5px 0;
+}
+
+
+h5 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center !important;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 500px;
+    /* border: 5px solid #398fff; */
+
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .content {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+.spec {
+    background-color: #fff;
+    border: 1px solid #000000;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.carousel2 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .carousel-item.active {
+    position: relative;
+  }
+
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: black;
+  }
+  
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .carousel-item {
+    animation: slideIn 1s ease-out;
+  }
+
+
+    /* Hero Section styling */
+.hero-section {
+    background-image: url('https://m-cdn.phonearena.com/images/article/64576-wide-two_1200/The-Best-Phones-to-buy-in-2024---our-top-10-list.webp?1716206294'); /* Replace with your hero background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Larger font size for main heading */
+    margin: 0 0 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem; /* Larger font size for subheading */
+    margin: 0 0 20px;
+}
+
+.cta-button {
+    background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin: auto;
+    width: 10%;
+}
+.cta-button:hover {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    padding: 20px;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Hover effect */
+.contact-info:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.product-button {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    width: 150px; /* Adjust the width to make the square smaller */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin-left: 0; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+.product-button:hover {
+    background-color: #3a3a3a;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
